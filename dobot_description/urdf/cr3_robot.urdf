@@ -6,7 +6,7 @@
   name="cr3_robot">
   <link name="dummy_link" />
   <link
-    name="base_link">
+    name="cr3_base_link">
     <inertial>
       <origin
         xyz="-0.0027213 3.915E-07 0.022038"
@@ -48,7 +48,7 @@
 
     <joint name="dummy_joint" type="fixed">
       <parent link="dummy_link" />
-      <child  link="base_link" />
+      <child  link="cr3_base_link" />
     </joint>
 
   <link
@@ -98,7 +98,7 @@
       xyz="0 0 0.1283"
       rpy="0 0 0" />
     <parent
-      link="base_link" />
+      link="cr3_base_link" />
     <child
       link="Link1" />
     <axis
